@@ -1,0 +1,45 @@
+.button {
+  display: inline-block;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  text-transform: lowercase;
+}
+
+.button-primary {
+  display: inline-block;
+  background-color: transparent;
+  font-size: 18px;
+  border: 1px solid $gray-primary;
+  padding: 8px 20px;
+  transition: color 0.4s linear, background-color 0.4s linear;
+
+  &:hover {
+    background-color: $gray-primary;
+    color: $gray-secondary;
+    transition: all 0.2s linear;
+    transform: scale(0.95);
+  }
+
+  &-large {
+    font-size: 24px;
+    padding: 12px 20px;
+  }
+
+  &-inverted {
+    text-transform: uppercase;
+  }
+}
+
+.button-secondary {
+  text-transform: uppercase;
+  background-color: $gray-secondary;
+  color: $gray-primary;
+  font-size: 12px;
+  border: 1px solid $gray-secondary;
+  padding: 4px 20px;
+
+  &:active {
+    background-color: $gray-primary;
+    color: $gray-secondary;
+  }
+}
