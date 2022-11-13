@@ -1,1 +1,38 @@
-@import './footer-primary';
+@import './footer-nav';
+@import './footer-connect';
+@import './footer-contact';
+
+.footer-container {
+  width: 100%;
+
+  @include media-breakpoint-up(lg) {
+    background-color: $gray-secondary;
+  }
+}
+
+.footer {
+  width: auto;
+  background-color: $gray-secondary;
+
+  & > div {
+    @include media-breakpoint-up(lg) {
+      display: grid;
+      grid-template-columns: 1fr 2fr 1fr;
+      grid-template-rows: auto;
+      grid-template-areas: 'contact' 'nav' 'connect';
+      width: auto;
+    }
+
+    .footer-contact {
+      grid-area: contact;
+    }
+
+    .footer-nav {
+      grid-area: nav;
+    }
+
+    .footer-connect {
+      grid-area: connect;
+    }
+  }
+}

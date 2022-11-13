@@ -1,23 +1,20 @@
+import Footer from "../components/common/footer/Footer";
+import Header from "../components/common/header/Header";
+
 export default function Home() {
   return (
     <div>
-      <h1>Buttons and folder structure</h1>
+      <header>
+        <Header></Header>
+      </header>
 
-      <a className="button button-primary" href="/">View all</a>
-      <br />
-      <br />
-      <a className="button button-primary button-primary-large" href="/">View all</a>
-      <br />
-      <br />
-      <a className="button button-secondary" href="/">New in</a>
-      <br />
-      <br />
-      <a className="button button-primary button-primary-inverted" href="/">Submit</a>
-      <br />
-      <br />
-      <a className="badge" href="/">
-        <i className="fa-regular fa-heart"></i>
-      </a>
+      <main>
+
+      </main>
+
+      <footer>
+        <Footer></Footer>
+      </footer>
     </div>
   );
 }

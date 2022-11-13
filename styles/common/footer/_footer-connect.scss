@@ -1,0 +1,107 @@
+.footer-connect {
+  background-color: $gray-secondary;
+  color: $brand-primary;
+  padding: 36px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @include media-breakpoint-up(lg) {
+    text-align: start;
+  }
+
+  .footer-newsletter {
+    font-family: roboto, sans-serif;
+    header {
+      font-family: 'Playfair Display', serif;
+      font-size: 22px;
+      margin-bottom: 36px;
+      text-align: center;
+    }
+
+    span {
+      @include media-breakpoint-up(lg) {
+        font-family: 'Playfair Display', serif;
+        font-size: 22px;
+        text-transform: lowercase;
+        margin-bottom: 12px;
+      }
+    }
+
+    .footer-email {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 24px;
+      font-size: 16px;
+
+      @include media-breakpoint-up(lg) {
+        align-items: flex-start;
+      }
+
+      input {
+        font-size: 12px;
+        padding: 4px 12px;
+        border: 1px solid $gray-tertiary;
+        width: 260px;
+      }
+    }
+
+    button {
+      display: flex;
+      margin: 0 auto;
+
+      @include media-breakpoint-up(lg) {
+        display: inline-block;
+      }
+    }
+
+    .footer-privacy {
+      margin-top: 24px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+
+      input {
+        height: 16px;
+        width: 16px;
+        border: 1px solid $gray-tertiary;
+      }
+
+      label {
+        text-align: start;
+        font-size: 12px;
+        line-height: 16px;
+
+        & > span {
+          font-size: 12px;
+          text-decoration: underline;
+          text-transform: none;
+        }
+      }
+    }
+  }
+
+  .footer-social {
+    margin-top: 36px;
+    text-align: center;
+
+    @include media-breakpoint-up(lg) {
+      display: inline-block;
+      margin-top: 22px;
+    }
+
+    header {
+      font-size: 22px;
+      margin-bottom: 36px;
+    }
+
+    .footer-icons {
+      font-size: 26px;
+      display: inline-flex;
+      gap: 16px;
+    }
+  }
+}
