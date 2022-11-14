@@ -4,12 +4,12 @@ export default function FooterNav() {
   return (
     <>
       <footer className="footer-nav">
-        <div className="footer-inner container">
-          <header className="d-lg-none">
+        <div className="footer-inner">
+          <header className="d-lg-none container">
             <h1>How can we help?</h1>
           </header>
 
-          <nav>
+          <nav className="container">
             <ul>
               <li>
                 <Link href="/" title="About us">
@@ -63,7 +63,7 @@ export default function FooterNav() {
             </ul>
           </nav>
 
-          <footer className="d-block d-lg-none">
+          <footer className="d-block d-lg-none container">
             <span className="d-block">
               <Link href="/" title="Terms and conditions">
                 Terms & conditions

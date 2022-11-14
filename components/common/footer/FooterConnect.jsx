@@ -27,7 +27,7 @@ export default function FooterConnect() {
                 />
               </div>
 
-              <button class="button-primary-inverted" type="submit">
+              <button className="button-primary-inverted" type="submit">
                 Submit
               </button>
 

@@ -41,12 +41,16 @@
   text-transform: uppercase;
   background-color: $gray-secondary;
   color: $gray-primary;
-  font-size: 12px;
+  font-size: 10px;
   border: 1px solid $gray-secondary;
-  padding: 4px 20px;
+  padding: 4px 15px;
+
+  &:hover {
+    color: $brand-primary;
+  }
 
   &:active {
-    background-color: $gray-primary;
+    background-color: $brand-primary;
     color: $gray-secondary;
   }
 }

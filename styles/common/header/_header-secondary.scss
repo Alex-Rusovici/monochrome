@@ -1,0 +1,62 @@
+.header-secondary {
+  width: auto;
+
+  @include media-breakpoint-up(lg) {
+    width: auto;
+    height: 500px;
+    background: $brand-primary url('/images/banners/logo_banner.png') center
+      center no-repeat;
+  }
+  .header-top-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: $brand-primary;
+    font-size: 20px;
+    text-transform: uppercase;
+
+    @include media-breakpoint-up(lg) {
+      padding: 24px 70px;
+    }
+
+    h1 {
+      font-size: 22px;
+    }
+
+    .header-controls {
+      font-size: 26px;
+      gap: 32px;
+      align-items: center;
+
+      .search-wrapper {
+        display: block;
+        font-family: Roboto, sans-serif;
+        border: 1px solid $brand-primary;
+        padding: 0 8px;
+
+        .search-bar > input {
+          border: 0;
+          padding-left: 8px;
+        }
+      }
+
+      @include media-breakpoint-up(lg) {
+        font-size: 20px;
+        color: $brand-primary;
+      }
+
+      ul {
+        display: flex;
+        gap: 22px;
+      }
+    }
+
+    .header-connect {
+      ul {
+        display: flex;
+        color: $gray-secondary;
+        gap: 18px;
+      }
+    }
+  }
+}

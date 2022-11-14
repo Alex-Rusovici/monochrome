@@ -1,0 +1,44 @@
+.header-primary {
+  background-color: $brand-primary;
+  color: $gray-secondary;
+
+  .wrapper-primary {
+    height: 50px;
+
+    i {
+      font-size: 26px;
+    }
+
+    .search-wrapper {
+      border: 1px solid $gray-secondary;
+      padding: 4px 16px;
+
+      input {
+        font-family: roboto, sans-serif;
+        color: $gray-secondary;
+        background-color: transparent;
+        border: 0;
+        text-transform: lowercase;
+        font-style: italic;
+      }
+    }
+  }
+
+  .nav-primary {
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    li {
+      font-size: 20px;
+      text-transform: uppercase;
+    }
+  }
+
+  .banner-secondary {
+    height: 180px;
+    background: $brand-primary url('/images/banners/logo_banner_mobile.png')
+      no-repeat center center / 120%;
+  }
+}
