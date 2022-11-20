@@ -6,6 +6,7 @@
     height: 500px;
     background: $brand-primary url('/images/banners/logo_banner.png') center
       center no-repeat;
+    background-size: cover;
   }
   .header-top-inner {
     display: flex;

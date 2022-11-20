@@ -5,8 +5,8 @@ import FooterNav from './FooterNav';
 export default function Footer() {
   return (
     <>
-      <div className="footer">
-        <div className="d-block d-lg-grid container">
+      <footer className="footer">
+        <div className="footer-inner container d-lg-grid">
           {/* daca pun container, arata bine in desktop, daca scot container, arata bine in mobile. AAAAARGH */}
 
           <section className="d-none d-lg-block">
@@ -21,7 +21,7 @@ export default function Footer() {
             <FooterConnect></FooterConnect>
           </section>
         </div>
-      </div>
+      </footer>
     </>
   );
 }

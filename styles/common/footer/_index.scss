@@ -2,16 +2,7 @@
 @import './footer-connect';
 @import './footer-contact';
 
-.footer-container {
-  width: 100%;
-
-  @include media-breakpoint-up(lg) {
-    background-color: $gray-secondary;
-  }
-}
-
 .footer {
-  width: auto;
   background-color: $gray-secondary;
 
   & > div {
@@ -33,6 +24,14 @@
 
     .footer-connect {
       grid-area: connect;
+    }
+  }
+
+  &-inner {
+    width: 100%;
+
+    @include media-breakpoint-up(lg) {
+      width: unset;
     }
   }
 }

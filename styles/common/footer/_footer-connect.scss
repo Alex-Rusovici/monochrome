@@ -7,7 +7,7 @@
   align-items: center;
 
   @include media-breakpoint-up(lg) {
-    text-align: start;
+    align-items: start;
   }
 
   .footer-newsletter {
@@ -45,6 +45,11 @@
         padding: 4px 12px;
         border: 1px solid $gray-tertiary;
         width: 260px;
+      }
+
+      & > label {
+        font-family: 'Playfair Display', sans-serif;
+        font-size: 22px;
       }
     }
 

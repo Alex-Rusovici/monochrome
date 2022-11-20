@@ -1,0 +1,50 @@
+.home-copy {
+  display: flex;
+  flex-direction: column;
+
+  @include media-breakpoint-up(lg) {
+    flex-direction: row;
+    gap: 140px;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  aside {
+    picture {
+      img {
+        max-width: 100%;
+
+        @include media-breakpoint-up(lg) {
+          max-width: unset;
+        }
+      }
+    }
+  }
+
+  .copyright {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+
+    p {
+      font-family: 'roboto', sans-serif;
+      font-weight: 300;
+      font-size: 22px;
+      line-height: 43px;
+    }
+
+    @include media-breakpoint-up(lg) {
+      h1 {
+        font-size: 40px;
+      }
+
+      p {
+        font-family: 'roboto', sans-serif;
+        font-weight: 300;
+        font-size: 20px;
+        line-height: 43px;
+      }
+    }
+  }
+}
