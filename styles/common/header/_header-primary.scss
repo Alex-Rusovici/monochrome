@@ -59,13 +59,13 @@
           transform: scaleX(1.2);
         }
       }
-
-      .banner-secondary {
-        height: 180px;
-        background: $brand-primary url('/images/banners/logo_banner_mobile.png')
-          no-repeat center center / 120%;
-        background-size: cover;
-      }
     }
+  }
+
+  .banner-secondary {
+    height: 180px;
+    background: $brand-primary url('/images/banners/logo_banner_mobile.png')
+      no-repeat center center / 120%;
+    background-size: cover;
   }
 }
