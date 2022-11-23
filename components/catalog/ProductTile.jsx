@@ -11,11 +11,11 @@ export default function ProductTile() {
                 src="/images/products/product_01.png"
                 alt="Monochrome Watch type 1"
               />
-
-              <span className="badge">
-                <i className="fa-regular fa-heart"></i>
-              </span>
             </picture>
+          </Link>
+
+          <Link href="/" className="badge">
+            <i className="fa-regular fa-heart"></i>
           </Link>
 
           <h1 className="product-tile-title">

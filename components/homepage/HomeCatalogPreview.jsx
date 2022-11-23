@@ -17,11 +17,11 @@ export default function HomeCatalogPreview() {
             <ProductTile></ProductTile>
           </li>
 
-          <li>
+          <li className="d-none d-lg-block">
             <ProductTile></ProductTile>
           </li>
 
-          <li>
+          <li className="d-none d-lg-block">
             <ProductTile></ProductTile>
           </li>
         </ul>

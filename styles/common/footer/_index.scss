@@ -28,10 +28,20 @@
   }
 
   &-inner {
-    width: 100%;
+    max-width: unset;
+    padding: 0;
 
     @include media-breakpoint-up(lg) {
-      width: unset;
+      max-width: 960px;
+      padding: 0 12px;
+    }
+
+    @include media-breakpoint-up(xl) {
+      max-width: 1140px;
+    }
+
+    @include media-breakpoint-up(xxl) {
+      max-width: 1296px;
     }
   }
 }
