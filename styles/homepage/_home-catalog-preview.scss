@@ -11,12 +11,23 @@
 
   ul {
     display: flex;
-    flex-direction: column;
-    gap: 40px;
+    flex-direction: row;
+    gap: 12px;
+
+    h1 {
+      text-transform: capitalize;
+      font-size: 16px;
+    }
+
+    span {
+      font-size: 16px;
+    }
   }
 
   @include media-breakpoint-up(lg) {
     ul {
+      text-transform: uppercase;
+      gap: 40px;
       display: flex;
       flex-direction: row;
       justify-content: space-between;
@@ -24,6 +35,15 @@
 
       li {
         width: 23.672566%; // 321 / 1356
+      }
+
+      h1 {
+        text-transform: uppercase;
+        font-size: 22px;
+      }
+
+      span {
+        font-size: 22px;
       }
     }
   }

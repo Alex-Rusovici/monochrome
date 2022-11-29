@@ -9,14 +9,12 @@
   transition: all 0.2s ease-in-out;
 
   &:hover {
-    background-color: $gray-primary;
+    background-color: $brand-primary;
     color: $gray-secondary;
-    transform: translate(-2px, -2px);
   }
 
   &:active {
-    background-color: $gray-primary;
+    background-color: $brand-primary;
     color: $gray-secondary;
-    transform: translate(-2px, -2px);
   }
 }

@@ -38,6 +38,12 @@
         .search-bar > input {
           border: 0;
           padding-left: 8px;
+          text-transform: lowercase;
+          font-style: italic;
+
+          @include media-breakpoint-up(lg) {
+            font-size: 16px;
+          }
         }
       }
 

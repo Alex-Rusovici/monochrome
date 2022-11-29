@@ -12,6 +12,7 @@
 
   .footer-newsletter {
     font-family: roboto, sans-serif;
+
     header {
       font-family: 'Playfair Display', serif;
       font-size: 22px;
@@ -35,16 +36,18 @@
       gap: 12px;
       margin-bottom: 24px;
       font-size: 16px;
+      padding: 0 12px;
 
       @include media-breakpoint-up(lg) {
         align-items: flex-start;
+        padding: 0;
       }
 
       input {
         font-size: 12px;
         padding: 4px 12px;
         border: 1px solid $gray-tertiary;
-        width: 260px;
+        width: 100%;
       }
 
       & > label {
@@ -63,11 +66,16 @@
     }
 
     .footer-privacy {
+      padding: 0 12px;
       margin-top: 24px;
       display: flex;
       justify-content: center;
       align-items: center;
       gap: 10px;
+
+      @include media-breakpoint-up(lg) {
+        padding: 0;
+      }
 
       input {
         height: 16px;

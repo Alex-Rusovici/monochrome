@@ -3,7 +3,7 @@ import Link from 'next/link';
 export default function FooterContact() {
   return (
     <>
-      <footer className="footer-contact footer-inner">
+      <footer className="footer-contact">
         <ul>
           <li>
             <Link href="tel:+44 010 2345 6789" title="Call us">
